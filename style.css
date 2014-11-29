@@ -1,0 +1,471 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    position: relative;
+    height: 100%;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background: #666;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -200px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.inner {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.digit-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.digit-inner {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.digit {
+    font: 30px/2 bold 'Trebuchet MS';
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.digit-1 {
+    -webkit-transform: rotate(30deg);
+}
+.digit-2 {
+    -webkit-transform: rotate(60deg);
+}
+.digit-3 {
+    -webkit-transform: rotate(90deg);
+}
+.digit-4 {
+    -webkit-transform: rotate(120deg);
+}
+.digit-5 {
+    -webkit-transform: rotate(150deg);
+}
+.digit-6 {
+    -webkit-transform: rotate(180deg);
+}
+.digit-7 {
+    -webkit-transform: rotate(210deg);
+}
+.digit-8 {
+    -webkit-transform: rotate(240deg);
+}
+.digit-9 {
+    -webkit-transform: rotate(270deg);
+}
+.digit-10 {
+    -webkit-transform: rotate(300deg);
+}
+.digit-11 {
+    -webkit-transform: rotate(330deg);
+}
+
+.sector-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sector-inner {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.sector {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+    .sector:after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: -1px;
+        margin: 0 0 0 -2px;
+        width: 4px;
+        height: 8px;
+        overflow: hidden;
+        background: #fff;
+    }
+.sector-0:after,
+.sector-10:after,
+.sector-20:after,
+.sector-30:after,
+.sector-40:after,
+.sector-50:after,
+.sector-60:after {
+    width: 6px;
+    height: 12px;
+    margin: 0 0 0 -3px;
+}
+    
+.sector-1 {
+    -webkit-transform: rotate(6deg);
+}
+.sector-2 {
+    -webkit-transform: rotate(12deg);
+}
+.sector-3 {
+    -webkit-transform: rotate(18deg);
+}
+.sector-4 {
+    -webkit-transform: rotate(24deg);
+}
+.sector-5 {
+    -webkit-transform: rotate(30deg);
+}
+.sector-6 {
+    -webkit-transform: rotate(36deg);
+}
+.sector-7 {
+    -webkit-transform: rotate(42deg);
+}
+.sector-8 {
+    -webkit-transform: rotate(48deg);
+}
+.sector-9 {
+    -webkit-transform: rotate(54deg);
+}    
+.sector-10 {
+    -webkit-transform: rotate(60deg);
+}    
+.sector-11 {
+    -webkit-transform: rotate(66deg);
+}
+.sector-12 {
+    -webkit-transform: rotate(72deg);
+}
+.sector-13 {
+    -webkit-transform: rotate(78deg);
+}
+.sector-14 {
+    -webkit-transform: rotate(84deg);
+}
+.sector-15 {
+    -webkit-transform: rotate(90deg);
+}
+.sector-16 {
+    -webkit-transform: rotate(96deg);
+}
+.sector-17 {
+    -webkit-transform: rotate(102deg);
+}
+.sector-18 {
+    -webkit-transform: rotate(108deg);
+}
+.sector-19 {
+    -webkit-transform: rotate(114deg);
+}    
+.sector-20 {
+    -webkit-transform: rotate(120deg);
+}    
+.sector-21 {
+    -webkit-transform: rotate(126deg);
+}
+.sector-22 {
+    -webkit-transform: rotate(132deg);
+}
+.sector-23 {
+    -webkit-transform: rotate(138deg);
+}
+.sector-24 {
+    -webkit-transform: rotate(144deg);
+}
+.sector-25 {
+    -webkit-transform: rotate(150deg);
+}
+.sector-26 {
+    -webkit-transform: rotate(156deg);
+}
+.sector-27 {
+    -webkit-transform: rotate(162deg);
+}
+.sector-28 {
+    -webkit-transform: rotate(168deg);
+}
+.sector-29 {
+    -webkit-transform: rotate(174deg);
+}    
+.sector-30 {
+    -webkit-transform: rotate(180deg);
+}    
+.sector-31 {
+    -webkit-transform: rotate(186deg);
+}
+.sector-32 {
+    -webkit-transform: rotate(192deg);
+}
+.sector-33 {
+    -webkit-transform: rotate(198deg);
+}
+.sector-34 {
+    -webkit-transform: rotate(204deg);
+}
+.sector-35 {
+    -webkit-transform: rotate(210deg);
+}
+.sector-36 {
+    -webkit-transform: rotate(216deg);
+}
+.sector-37 {
+    -webkit-transform: rotate(222deg);
+}
+.sector-38 {
+    -webkit-transform: rotate(228deg);
+}
+.sector-39 {
+    -webkit-transform: rotate(234deg);
+}    
+.sector-40 {
+    -webkit-transform: rotate(240deg);
+}    
+.sector-41 {
+    -webkit-transform: rotate(246deg);
+}
+.sector-42 {
+    -webkit-transform: rotate(252deg);
+}
+.sector-43 {
+    -webkit-transform: rotate(258deg);
+}
+.sector-44 {
+    -webkit-transform: rotate(264deg);
+}
+.sector-45 {
+    -webkit-transform: rotate(270deg);
+}
+.sector-46 {
+    -webkit-transform: rotate(276deg);
+}
+.sector-47 {
+    -webkit-transform: rotate(282deg);
+}
+.sector-48 {
+    -webkit-transform: rotate(288deg);
+}
+.sector-49 {
+    -webkit-transform: rotate(294deg);
+}    
+.sector-50 {
+    -webkit-transform: rotate(300deg);
+}    
+.sector-51 {
+    -webkit-transform: rotate(306deg);
+}
+.sector-52 {
+    -webkit-transform: rotate(312deg);
+}
+.sector-53 {
+    -webkit-transform: rotate(318deg);
+}
+.sector-54 {
+    -webkit-transform: rotate(324deg);
+}
+.sector-55 {
+    -webkit-transform: rotate(330deg);
+}
+.sector-56 {
+    -webkit-transform: rotate(336deg);
+}
+.sector-57 {
+    -webkit-transform: rotate(342deg);
+}
+.sector-58 {
+    -webkit-transform: rotate(348deg);
+}
+.sector-59 {
+    -webkit-transform: rotate(354deg);
+}
+
+@-webkit-keyframes sec {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.arrow-sec-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 11;
+}
+
+.arrow-sec-inner {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: sec 60s linear infinite;
+}
+
+.arrow-sec {
+    width: 4px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin: 0 0 0 -2px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+
+.arrow-min-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.arrow-min-inner {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: sec 3600s linear infinite;
+}
+
+.arrow-min {
+    width: 10px;
+    height: 210px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin: 0 0 0 -5px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.arrow-h-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.arrow-h-inner {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: sec 43200s linear infinite;
+}
+
+.arrow-h {
+    width: 10px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    margin: 0 0 0 -5px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.dot-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 12;
+}
+
+.dot-inner {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: sec 43200s linear infinite;
+}
+
+.dot {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -1px 0 0 -1px;
+    background: #666;
+    border-radius: 100%;
+}
+
+.sign-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 8;
+}
+
+.sign-inner {
+    padding: 250px 0 0 ;
+    position: relative;
+    text-align: center;
+    -webkit-animation: sec 43200s linear infinite;
+}
+
+.sign {
+    font: 14px/1.5 'Trebuchet MS';
+    color: #fff;
+}
+
+    .sign h1 {
+        font-size: 24px;
+        margin: 0;
+    }
