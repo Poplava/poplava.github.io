@@ -1,1 +1,140 @@
-<h1>Hello world</h1>
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="inner">
+                <div class="digit-container">
+                    <div class="digit-inner">
+                        <div class="digit digit-0">12</div>
+                        <div class="digit digit-1">1</div>
+                        <div class="digit digit-2">2</div>
+                        <div class="digit digit-3">3</div>
+                        <div class="digit digit-4">4</div>
+                        <div class="digit digit-5">5</div>
+                        <div class="digit digit-6">6</div>
+                        <div class="digit digit-7">7</div>
+                        <div class="digit digit-8">8</div>
+                        <div class="digit digit-9">9</div>
+                        <div class="digit digit-10">10</div>
+                        <div class="digit digit-11">11</div>
+                    </div>
+                </div>
+                <div class="sector-container">
+                    <div class="sector-inner">
+                        <div class="sector sector-0"></div>
+                        <div class="sector sector-1"></div>
+                        <div class="sector sector-2"></div>
+                        <div class="sector sector-3"></div>
+                        <div class="sector sector-4"></div>
+                        <div class="sector sector-5"></div>
+                        <div class="sector sector-6"></div>
+                        <div class="sector sector-7"></div>
+                        <div class="sector sector-8"></div>
+                        <div class="sector sector-9"></div>
+                        <div class="sector sector-10"></div>
+                        <div class="sector sector-11"></div>
+                        <div class="sector sector-12"></div>
+                        <div class="sector sector-13"></div>
+                        <div class="sector sector-14"></div>
+                        <div class="sector sector-15"></div>
+                        <div class="sector sector-16"></div>
+                        <div class="sector sector-17"></div>
+                        <div class="sector sector-18"></div>
+                        <div class="sector sector-19"></div>
+                        <div class="sector sector-20"></div>
+                        <div class="sector sector-21"></div>
+                        <div class="sector sector-22"></div>
+                        <div class="sector sector-23"></div>
+                        <div class="sector sector-24"></div>
+                        <div class="sector sector-25"></div>
+                        <div class="sector sector-26"></div>
+                        <div class="sector sector-27"></div>
+                        <div class="sector sector-28"></div>
+                        <div class="sector sector-29"></div>
+                        <div class="sector sector-30"></div>
+                        <div class="sector sector-31"></div>
+                        <div class="sector sector-32"></div>
+                        <div class="sector sector-33"></div>
+                        <div class="sector sector-34"></div>
+                        <div class="sector sector-35"></div>
+                        <div class="sector sector-36"></div>
+                        <div class="sector sector-37"></div>
+                        <div class="sector sector-38"></div>
+                        <div class="sector sector-39"></div>
+                        <div class="sector sector-40"></div>
+                        <div class="sector sector-41"></div>
+                        <div class="sector sector-42"></div>
+                        <div class="sector sector-43"></div>
+                        <div class="sector sector-44"></div>
+                        <div class="sector sector-45"></div>
+                        <div class="sector sector-46"></div>
+                        <div class="sector sector-47"></div>
+                        <div class="sector sector-48"></div>
+                        <div class="sector sector-49"></div>
+                        <div class="sector sector-50"></div>
+                        <div class="sector sector-51"></div>
+                        <div class="sector sector-52"></div>
+                        <div class="sector sector-53"></div>
+                        <div class="sector sector-54"></div>
+                        <div class="sector sector-55"></div>
+                        <div class="sector sector-56"></div>
+                        <div class="sector sector-57"></div>
+                        <div class="sector sector-58"></div>
+                        <div class="sector sector-59"></div>
+                    </div>
+                </div>
+                <div class="arrow-sec-container" id="tcS">
+                    <div class="arrow-sec-inner">
+                        <div class="arrow-sec"></div>
+                    </div>
+                </div>
+                <div class="arrow-min-container" id="tcM">
+                    <div class="arrow-min-inner">
+                        <div class="arrow-min"></div>
+                    </div>
+                </div>
+                <div class="arrow-h-container" id="tcH">
+                    <div class="arrow-h-inner">
+                        <div class="arrow-h"></div>
+                    </div>
+                </div>
+                <div class="dot-container">
+                    <div class="dot-inner">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="sign-container">
+                    <div class="sign-inner">
+                        <div class="sign">
+                            <h1>CSS3 clock</h1>
+                            &copy; Poplava JS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var date = new Date();
+        var h = date.getHours() % 12;
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var ms = date.getMilliseconds();
+
+        var dS = (s + ms / 1000) / 60;
+        var dM = m / 60 + dS / 60;
+        var dH = h / 12 + dM / 12;
+
+        document.querySelector('#tcH').setAttribute('style', '-webkit-transform: rotate(' + 360 * dH + 'deg);');
+        document.querySelector('#tcM').setAttribute('style', '-webkit-transform: rotate(' + 360 * dM + 'deg);');
+        document.querySelector('#tcS').setAttribute('style', '-webkit-transform: rotate(' + 360 * dS + 'deg);');
+    </script>
+</body>
+</html>
