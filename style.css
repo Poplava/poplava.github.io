@@ -457,7 +457,6 @@ html, body {
     padding: 250px 0 0 ;
     position: relative;
     text-align: center;
-    -webkit-animation: sec 43200s linear infinite;
 }
 
 .sign {
