@@ -46,7 +46,7 @@ html, body {
 }
 
 .digit {
-    font: 30px/2 bold serif;
+    font: 30px/2 bold sans-serif;
     color: #fff;
     position: absolute;
     left: 0;
@@ -460,7 +460,7 @@ html, body {
 }
 
 .sign {
-    font: 14px/1.5 serif;
+    font: 14px/1.5 sans-serif;
     color: #fff;
 }
 
