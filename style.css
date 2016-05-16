@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     width: 100%;
     height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 #root {
@@ -46,7 +47,7 @@ html, body {
 }
 
 .digit {
-    font: 30px/2 bold sans-serif;
+    font: 30px/2 bold;
     color: #fff;
     position: absolute;
     left: 0;
@@ -460,7 +461,7 @@ html, body {
 }
 
 .sign {
-    font: 14px/1.5 sans-serif;
+    font: 14px/1.5;
     color: #fff;
 }
 
